@@ -12,12 +12,9 @@ int RaisToThePower(int A, int B)
     int ApowB = 1;
     for (int i = 1; i <= B; i++)
     {
-        ApowB = A * ApowB;
+        ApowB *= A; //ApowB = A * ApowB;
     }
     return ApowB;
 }
 
 Console.WriteLine(RaisToThePower(A, B));
-
-
-

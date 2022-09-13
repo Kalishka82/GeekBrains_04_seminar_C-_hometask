@@ -3,13 +3,13 @@
 // Среднее арифметическое равно сумме, делёной на количество.
 
 int[] arr = CreateArray(8);
-PrintArray(arr);
+PrintArray(arr); // is using just for visibility of code checking
 Console.Write("\n");
 
 int average = FindAverage(arr);
 Console.WriteLine($"Arithmetic Average = {average}");
 
-// Random numbers (0, 100) are using just for simplicity of code checking 
+// Random numbers (0, 100) are using just for visibility of code checking 
 int[] CreateArray(int size)
 {
     int[] array = new int[size];
@@ -85,6 +85,7 @@ bool EvenElements(int[] arr)
 // возрастанию. Если очередное число меньше предыдущего, ответ — нет.
 
 bool isSortedAscending = SortedAscending(arr);
+
 string txt1 = isSortedAscending == true? "-> YES" : "-> NO";
 Console.WriteLine(txt1);
 

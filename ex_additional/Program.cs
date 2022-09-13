@@ -32,7 +32,7 @@ int FindAverage(int[] arr)
     int sum = 0;
 
     for (int i = 0; i < arr.Length; i++)
-        sum = sum + arr[i];
+        sum += arr[i];
     
     int aver = sum / arr.Length;
     return aver;
@@ -93,11 +93,11 @@ bool SortedAscending(int[] arr)
 {
     int min = arr[0];
 
-    for (int i =0; i < arr.Length; i++)
+    for (int i = 1; i < arr.Length; i++)
     {
         if (arr[i] < min)
-        return false;
+            return false;
+        else min = arr[i];
     }
-
     return true;
 }

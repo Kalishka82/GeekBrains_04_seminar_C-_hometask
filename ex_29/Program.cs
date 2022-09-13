@@ -11,11 +11,14 @@ PrintArray(arr);  // PrintArray(CreateArray(8));
 int[] CreateArray(int size)
 {
     int[] array = new int[size];
+
     for (int i = 0; i < size; i++)
     {
         array[i] = int.Parse(elements[i])!;
     }
     return array;
+
+    // int[] array = Array.ConvertAll(elements, int.Parse);
 }
 
 void PrintArray(int[] arr)
